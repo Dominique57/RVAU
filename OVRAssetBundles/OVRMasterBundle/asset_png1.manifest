@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 3479185421
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ab5932c2b173e5550b31948ec6702723
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4df8c69f2c8a6ad9e3cbf82bb83e4dc3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Oculus/SampleFramework/Usage/Locomotion/Textures/concrete_01_msm.png
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/slider_slider.png
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Skyboxes/Sky_02/Skybox02_Right-X.png
+- Assets/Oculus/SampleFramework/Usage/Locomotion/Textures/concrete_01_nml.png
+- Assets/Oculus/SampleFramework/Usage/Locomotion/Textures/floor_wood_02_dif.png
+- Assets/Oculus/SampleFramework/Usage/Locomotion/Textures/floor_tile_01_amb.png
+- Assets/Oculus/SampleFramework/Usage/Locomotion/Textures/wall_cinder_01_dif.png
+- Assets/Oculus/SampleFramework/Usage/Locomotion/Textures/metal_01_nml.png
+Dependencies: []
