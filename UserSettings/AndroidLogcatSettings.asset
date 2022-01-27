@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH83HZ80492",
         "name": "com.DominiqueSoft.ProjetRVAU",
-        "processId": 19111,
+        "processId": 19596,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -163,6 +163,12 @@
             "name": "com.DominiqueSoft.ProjetRVAU",
             "processId": 19111,
             "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 19596,
+            "exited": false
         }
     ],
     "m_Tags": {
@@ -215,7 +221,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "",
+    "m_Filter": "photon",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }
