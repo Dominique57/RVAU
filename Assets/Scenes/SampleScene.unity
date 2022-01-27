@@ -1426,6 +1426,8 @@ GameObject:
   - component: {fileID: 1531168403}
   - component: {fileID: 1531168406}
   - component: {fileID: 1531168407}
+  - component: {fileID: 1531168409}
+  - component: {fileID: 1531168408}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -1523,6 +1525,39 @@ MonoBehaviour:
   - {fileID: 1710062457}
   m_DeadzoneMin: 0.125
   m_DeadzoneMax: 0.925
+--- !u!114 &1531168408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531168402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LocomotionProvider: {fileID: 1531168406}
+  m_MinHeight: 0
+  m_MaxHeight: Infinity
+--- !u!143 &1531168409
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531168402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1562069059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4537225549239692, guid: ab36f4e752fd5d74d8e9f8f24c8864f2, type: 3}

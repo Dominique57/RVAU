@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH83HZ80492",
         "name": "com.DominiqueSoft.ProjetRVAU",
-        "processId": 13861,
+        "processId": 19111,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -150,6 +150,18 @@
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
             "processId": 13861,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 18359,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 19111,
             "exited": false
         }
     ],
