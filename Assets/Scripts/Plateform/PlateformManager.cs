@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO.Pipes;
 using UnityEditor;
-using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class PlateformManager : MonoBehaviour
@@ -25,16 +24,11 @@ public class PlateformManager : MonoBehaviour
                 gameObj.SetActive(false);
             break;
         default:
-            EditorUtility.DisplayDialog("OS ERROR", "Your platform is currently not supported !", "Exit");
-            Debug.Log("Leaving application");
-            Application.Quit();
-            Debug.Log("Left application");
+            Debug.LogWarning("Platform not officially supported, fallback to pc version !");
+            foreach (var gameObj in androidGameObjects)
+                gameObj.SetActive(false);
             break;
         }
         
-    }
-
-    void Update()
-    {
     }
 }

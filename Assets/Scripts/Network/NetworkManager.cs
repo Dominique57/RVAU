@@ -4,57 +4,56 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class NetworkManager : MonoBehaviourPunCallbacks
-{
-    void Start()
-    {
+public class NetworkManager : MonoBehaviourPunCallbacks {
+    void Start() {
         Debug.Log("Connecting to PUN...");
 
-        // Settings
         DontDestroyOnLoad(this.gameObject);
         PhotonNetwork.AutomaticallySyncScene = true;
 
-        // Network room
         PhotonNetwork.ConnectUsingSettings();
     }
 
-    void Update()
-    {
-    }
-
-    public override void OnConnectedToMaster()
-    {
+    public override void OnConnectedToMaster() {
         Debug.Log("Connected to PUN !");
 
-        var roomOptions = new RoomOptions
-        {
-            IsVisible = false
+        var roomOptions = new RoomOptions {
+            MaxPlayers = 2,
+            IsVisible = true,
+            IsOpen = true,
         };
-        PhotonNetwork.JoinOrCreateRoom("master", roomOptions, null);
+        PhotonNetwork.JoinOrCreateRoom("master", roomOptions, TypedLobby.Default);
     }
-
-    public override void OnCreateRoomFailed(short returnCode, string message)
-    {
-        Debug.LogError($"Create room failed: code: {returnCode}, message: {message}");
-    }
-
-    public override void OnJoinRoomFailed(short returnCode, string message)
-    {
-        Debug.LogError($"Join room failed: code: {returnCode}, message: {message}");
-    }
-
-    public override void OnJoinedRoom()
-    {
+    
+    public override void OnJoinedRoom() {
         Debug.Log("Joined room !");
     }
 
-    public override void OnPlayerEnteredRoom(Player newPlayer)
-    {
+    public override void OnPlayerEnteredRoom(Player newPlayer) {
         Debug.Log("Player joined room !");
     }
 
-    public override void OnPlayerLeftRoom(Player otherPlayer)
-    {
+    public override void OnPlayerLeftRoom(Player otherPlayer) {
         Debug.Log("Player left room !");
     }
+
+    #region ErrorMessages
+    
+    public override void OnCreateRoomFailed(short returnCode, string message) {
+        Debug.LogError($"Create room failed: code: {returnCode}, message: {message}");
+    }
+
+    public override void OnJoinRoomFailed(short returnCode, string message) {
+        Debug.LogError($"Join room failed: code: {returnCode}, message: {message}");
+    }
+
+    public override void OnJoinRandomFailed(short returnCode, string message) {
+        Debug.LogError($"Join random room failed: code: {returnCode}, message: {message}");
+    }
+
+    public override void OnCustomAuthenticationFailed(string debugMessage) {
+        Debug.LogError($"Custom authentication failed: message: {debugMessage}");
+    }
+    
+    #endregion
 }
