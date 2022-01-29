@@ -6,7 +6,8 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class NetworkVrPlayer : MonoBehaviour {
-    
+
+    public GameObject cameraOffset;
     public GameObject mainCamera;
     public GameObject lHandController;
     public GameObject rHandController;
@@ -36,7 +37,7 @@ public class NetworkVrPlayer : MonoBehaviour {
     
     void Start() {
         if (!GetComponent<PhotonView>().IsMine) {
-            transform.position += Vector3.up * GetComponent<XROrigin>().CameraYOffset;
+            cameraOffset.transform.position += Vector3.up * GetComponent<XROrigin>().CameraYOffset;
             mainCamera.SetActive(false);
             DisablePlayerController();
             DisableHandController(lHandController);
