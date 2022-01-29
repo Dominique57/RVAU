@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 562577758883393739}
   m_Layer: 0
   m_Name: VR_PlayerController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 5607139187747823781}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 3
   m_EnableStrafe: 1
   m_UseGravity: 0
   m_GravityApplicationMode: 0
