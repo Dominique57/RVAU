@@ -6,6 +6,7 @@ using UnityEngine;
 public class NetworkPcPlayer : MonoBehaviour
 {
     public GameObject mainCamera;
+    public MeshRenderer meshRenderer;
     
     void DisablePlayerController() {
         GetComponent<CharacterController>().enabled = false;
@@ -16,7 +17,9 @@ public class NetworkPcPlayer : MonoBehaviour
     
     void Start()
     {
-        if (!GetComponent<PhotonView>().IsMine) {
+        if (GetComponent<PhotonView>().IsMine) {
+            meshRenderer.enabled = false;
+        } else {
             mainCamera.SetActive(false);
             DisablePlayerController();
         }

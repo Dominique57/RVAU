@@ -7,15 +7,14 @@ using Photon.Realtime;
 
 public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks {
     private GameObject spawnedPlayer;
+    public GameObject PCSpawner;
+    public GameObject VRSpawner;
 
     public override void OnJoinedRoom() {
-        var spawnPosition = transform.position;
         if (Application.platform == RuntimePlatform.Android) {
-            spawnPosition.x += 1;
-            spawnedPlayer = PhotonNetwork.Instantiate("VR_PlayerController", spawnPosition, transform.rotation);
+            spawnedPlayer = PhotonNetwork.Instantiate("VR_PlayerController", VRSpawner.transform.position, transform.rotation);
         } else {
-            spawnPosition.x -= 1;
-            spawnedPlayer = PhotonNetwork.Instantiate("PC_PlayerController", spawnPosition, transform.rotation);
+            spawnedPlayer = PhotonNetwork.Instantiate("PC_PlayerController", PCSpawner.transform.position, transform.rotation);
         }
     }
 

@@ -238,6 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 6096152855038702916}
+  meshRenderer: {fileID: 6110694095913249491}
 --- !u!114 &443904048896977702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +314,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23759752699054724, guid: f10c394033f254647873f3d28a75a062, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10c394033f254647873f3d28a75a062, type: 3}
 --- !u!1 &6097148615886307963 stripped
@@ -323,5 +328,10 @@ GameObject:
 --- !u!4 &6095491518204511427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4058866896921748, guid: f10c394033f254647873f3d28a75a062, type: 3}
+  m_PrefabInstance: {fileID: 6096152854927007831}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6110694095913249491 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23759752699054724, guid: f10c394033f254647873f3d28a75a062, type: 3}
   m_PrefabInstance: {fileID: 6096152854927007831}
   m_PrefabAsset: {fileID: 0}
