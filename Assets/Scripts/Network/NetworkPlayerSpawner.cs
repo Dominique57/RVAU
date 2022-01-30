@@ -18,7 +18,7 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks {
             mazeCeiling.SetActive(true);
         } else {
             spawnedPlayer = PhotonNetwork.Instantiate("PC_PlayerController", PCSpawner.transform.position, transform.rotation);
-            mazeCeiling.SetActive(true);
+            mazeCeiling.SetActive(false);
         }
     }
 
