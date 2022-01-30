@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "1WMHH83HZ80492",
     "m_SelectedPackage": {
-        "deviceId": "1WMHH83HZ80492",
-        "name": "com.DominiqueSoft.ProjetRVAU",
-        "processId": 4149,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,224 +11,38 @@
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 13861,
+            "processId": 4149,
             "exited": true
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 18359,
+            "processId": 7706,
             "exited": true
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 19111,
+            "processId": 8395,
             "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 19596,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 32414,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.oculus.os.vrusb",
-            "processId": 8186,
-            "exited": false
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.oculus.shellenv",
-            "processId": 1878,
+            "processId": 1867,
             "exited": false
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 12232,
-            "exited": false
+            "processId": 8949,
+            "exited": true
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 12955,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 13488,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 14219,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 14594,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 15210,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 15766,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 16830,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 17379,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 17844,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 18162,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 18658,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 19143,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 19496,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 20095,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 20714,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 21227,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 21864,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 26614,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 27086,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 28022,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 28500,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 29181,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 31385,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 31712,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 31982,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 32381,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 32758,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 1401,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 4149,
-            "exited": false
+            "processId": 9317,
+            "exited": true
         },
         {
             "deviceId": "1PASH9A9JQ0286",
