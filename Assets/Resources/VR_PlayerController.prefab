@@ -519,7 +519,7 @@ MonoBehaviour:
   m_System: {fileID: 5607139187747823781}
   m_MoveSpeed: 3
   m_EnableStrafe: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_GravityApplicationMode: 0
   m_ForwardSource: {fileID: 5607139188383245013}
   m_InputBinding: 0
