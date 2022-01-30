@@ -132,13 +132,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 0.85
+  m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.6, z: 0}
 --- !u!114 &6096152855299793831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +179,8 @@ MonoBehaviour:
   JumpTimeout: 0.1
   FallTimeout: 0.15
   Grounded: 1
-  GroundedOffset: 0.8
-  GroundedRadius: 0.5
+  GroundedOffset: 0.9
+  GroundedRadius: 0.25
   GroundLayers:
     serializedVersion: 2
     m_Bits: 1
