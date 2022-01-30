@@ -29,7 +29,7 @@ public class NetworkVrPlayer : MonoBehaviour {
         GetComponent<LocomotionSystem>().enabled = false;
         GetComponent<DeviceBasedSnapTurnProvider>().enabled = false;
         GetComponent<DeviceBasedContinuousMoveProvider>().enabled = false;
-        GetComponent<CharacterController>().enabled = false;
+        // GetComponent<CharacterController>().enabled = false;
         GetComponent<CharacterControllerDriver>().enabled = false;
     }
 
