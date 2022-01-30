@@ -1,19 +1,13 @@
 {
     "m_SelectedDeviceId": "1WMHH83HZ80492",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "1WMHH83HZ80492",
+        "name": "com.DominiqueSoft.ProjetRVAU",
+        "processId": 14650,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 4149,
-            "exited": true
-        },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
@@ -43,6 +37,42 @@
             "name": "com.DominiqueSoft.ProjetRVAU",
             "processId": 9317,
             "exited": true
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 12021,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.oculus.os.clearactivity",
+            "processId": 12399,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 13616,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 13930,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 14264,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 14650,
+            "exited": false
         },
         {
             "deviceId": "1PASH9A9JQ0286",

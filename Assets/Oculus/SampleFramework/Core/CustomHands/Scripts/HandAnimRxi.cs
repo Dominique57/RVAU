@@ -30,8 +30,8 @@ public class HandAnimRxi : MonoBehaviour {
     void Start() {
         var colliders = GetComponentsInChildren<Collider>()
             .Where(childCollider => !childCollider.isTrigger);
-        foreach (var _collider in colliders)
-            _collider.enabled = true;
+        // foreach (var _collider in colliders)
+            // _collider.enabled = true;
 
         m_animLayerIndexPoint = m_animator.GetLayerIndex(ANIM_LAYER_NAME_POINT);
         m_animLayerIndexThumb = m_animator.GetLayerIndex(ANIM_LAYER_NAME_THUMB);
