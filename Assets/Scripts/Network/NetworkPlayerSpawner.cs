@@ -10,11 +10,15 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks {
     public GameObject PCSpawner;
     public GameObject VRSpawner;
 
+    public GameObject mazeCeiling;
+
     public override void OnJoinedRoom() {
         if (Application.platform == RuntimePlatform.Android) {
             spawnedPlayer = PhotonNetwork.Instantiate("VR_PlayerController", VRSpawner.transform.position, transform.rotation);
+            mazeCeiling.SetActive(true);
         } else {
             spawnedPlayer = PhotonNetwork.Instantiate("PC_PlayerController", PCSpawner.transform.position, transform.rotation);
+            mazeCeiling.SetActive(false);
         }
     }
 
