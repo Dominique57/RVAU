@@ -8,6 +8,11 @@ public class NetworkPcPlayer : MonoBehaviour
     public GameObject mainCamera;
     public MeshRenderer meshRenderer;
     
+    void DisableCamera() {
+        mainCamera.GetComponent<Camera>().enabled = false;
+        mainCamera.GetComponent<AudioListener>().enabled = false;
+    }
+    
     void DisablePlayerController() {
         GetComponent<CharacterController>().enabled = false;
         GetComponent<FpsInputs>().enabled = false;
@@ -20,7 +25,7 @@ public class NetworkPcPlayer : MonoBehaviour
         if (GetComponent<PhotonView>().IsMine) {
             meshRenderer.enabled = false;
         } else {
-            mainCamera.SetActive(false);
+            DisableCamera();
             DisablePlayerController();
         }
     }
