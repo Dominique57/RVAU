@@ -35,14 +35,12 @@ public class NetworkVrPlayer : MonoBehaviour {
 
     void DisableHandController(GameObject handController) {
         handController.GetComponent<XRController>().enabled = false;
-        handController.GetComponent<XRRayInteractor>().enabled = false;
-        handController.GetComponent<LineRenderer>().enabled = false;
-        handController.GetComponent<XRInteractorLineVisual>().enabled = false;
+        handController.GetComponent<XRDirectInteractor>().enabled = false;
+        handController.GetComponent<CapsuleCollider>().enabled = false;
     }
 
     void DisableHandPrefab(GameObject handPrefab) {
         handPrefab.GetComponent<HandAnimRxi>().enabled = false;
-        handPrefab.GetComponent<HandColliderHandler>().enabled = false;
     }
     
     void Start() {
