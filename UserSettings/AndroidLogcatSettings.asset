@@ -1,125 +1,47 @@
 {
     "m_SelectedDeviceId": "1WMHH83HZ80492",
     "m_SelectedPackage": {
-        "deviceId": "1WMHH83HZ80492",
-        "name": "com.DominiqueSoft.ProjetRVAU",
-        "processId": 26875,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "1WMHH83HZ80492",
-            "name": "com.oculus.shellenv",
-            "processId": 3245,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 16184,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 16466,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 16787,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 17102,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 17332,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 19982,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 21563,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 22036,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 22329,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 22864,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 23241,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 23609,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 24003,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
             "processId": 24456,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
             "processId": 25559,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
             "processId": 26064,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
             "processId": 26447,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
             "processId": 26875,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.oculus.os.vrusb",
+            "processId": 28438,
             "exited": false
         },
         {

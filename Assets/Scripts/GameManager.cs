@@ -27,10 +27,7 @@ public class GameManager : MonoBehaviour {
     public void disableMazeLight() {
         mazeLightEnabled = false;
 
-        foreach (var gameObj in GameObject.FindGameObjectsWithTag("Flashlight")) {
-            if (gameObj.GetComponent<Light>() is var _light && _light != null)
-                _light.enabled = true;
-        }
+        toggleFlashLights(true);
 
         RenderSettings.ambientLight = noLightColor;
     }
@@ -38,11 +35,20 @@ public class GameManager : MonoBehaviour {
     public void enableMazeLight() {
         mazeLightEnabled = true;
         
-        foreach (var gameObj in GameObject.FindGameObjectsWithTag("Flashlight")) {
-            if (gameObj.GetComponent<Light>() is var _light && _light != null)
-                _light.enabled = false;
-        }
+        toggleFlashLights(false);
         
         RenderSettings.ambientLight = lightColor;
     }
+
+    public void toggleFlashLights(bool active) {
+        foreach (var gameObj in GameObject.FindGameObjectsWithTag("Flashlight")) {
+            if (gameObj.GetComponent<Light>() is var _light && _light != null)
+                _light.enabled = active;
+        } 
+    }
+
+    public void toggleFlashLights() {
+        toggleFlashLights(!mazeLightEnabled);
+    }
+    
 }
