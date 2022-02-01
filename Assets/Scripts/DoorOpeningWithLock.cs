@@ -10,10 +10,10 @@ public class DoorOpeningWithLock : MonoBehaviour {
     private static readonly int CharacterNearby = Animator.StringToHash("character_nearby");
 
     void Start() {
-        SphereCollider sphereCollider = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
-        sphereCollider.isTrigger = true;
-        sphereCollider.center = new Vector3(-1.2f, 2, 0);
-        sphereCollider.radius = 3.5f;
+        BoxCollider boxCollider = gameObject.AddComponent(typeof(BoxCollider)) as BoxCollider;
+        boxCollider.isTrigger = true;
+        boxCollider.center = new Vector3(0, 2, 0);
+        boxCollider.size = new Vector3(4, 4, 6);
     }
 
     private static bool isPlayer(Collider other) {
