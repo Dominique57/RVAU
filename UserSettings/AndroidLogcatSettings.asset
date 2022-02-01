@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "1WMHH83HZ80492",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "1WMHH83HZ80492",
+        "name": "com.DominiqueSoft.ProjetRVAU",
+        "processId": 30162,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -42,6 +42,12 @@
             "deviceId": "1WMHH83HZ80492",
             "name": "com.oculus.os.vrusb",
             "processId": 28438,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 30162,
             "exited": false
         },
         {

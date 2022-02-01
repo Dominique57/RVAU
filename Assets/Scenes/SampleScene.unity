@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.66206837, g: 0.7684559, b: 0.8113208, a: 0}
+  m_AmbientSkyColor: {r: 0.1268245, g: 0.17720978, b: 0.2830189, a: 0}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -329,11 +329,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167046674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.04, y: 2.38, z: 25.221}
+  m_LocalPosition: {x: 6.621, y: 2.03, z: 27.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1769292098}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &170579204
 PrefabInstance:
@@ -1029,9 +1029,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a24b3e8b17c88f408b2a30d55147d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mazeLightEnabled: 1
+  mazeLightEnabled: 0
   noLightColor: {r: 0.1268245, g: 0.17720978, b: 0.2830189, a: 0}
   lightColor: {r: 0.66206837, g: 0.7684559, b: 0.8113208, a: 0}
+  lightStepDoor: {fileID: 1559025142}
 --- !u!4 &390311431
 Transform:
   m_ObjectHideFlags: 0
@@ -1457,7 +1458,7 @@ Transform:
   - {fileID: 644228713}
   - {fileID: 414683327}
   m_Father: {fileID: 616738413}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &549806672
 PrefabInstance:
@@ -1540,6 +1541,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 498357574}
     m_Modifications:
+    - target: {fileID: 188763501076691487, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 371426892489014378, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768256240012692676, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976778708385226427, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4174096596867825948, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
       propertyPath: m_Name
       value: MazeSpawner
@@ -3044,6 +3061,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559025142 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6257614187565367987, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+  m_PrefabInstance: {fileID: 616738412}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5cb6312e14c0ea4b9d0461ee5a9a38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1595046536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3321,8 +3349,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2120311842}
   - {fileID: 167046675}
+  - {fileID: 2120311842}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3663,7 +3691,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4632756444364120746, guid: 3d99a1363fcbeac45a51a401dbac6d06, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4632756444364120746, guid: 3d99a1363fcbeac45a51a401dbac6d06, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3863,5 +3891,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1769292098}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

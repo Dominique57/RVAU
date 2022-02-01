@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
     public Color noLightColor;
     public Color lightColor;
 
+    public DoorOpeningWithLock lightStepDoor;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour {
         mazeLightEnabled = true;
         
         toggleFlashLights(false);
+        lightStepDoor.locked = false;
         
         RenderSettings.ambientLight = lightColor;
     }
