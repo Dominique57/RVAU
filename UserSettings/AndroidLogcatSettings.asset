@@ -3,29 +3,11 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH83HZ80492",
         "name": "com.DominiqueSoft.ProjetRVAU",
-        "processId": 30162,
+        "processId": 7812,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 24456,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 25559,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 26064,
-            "exited": true
-        },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
@@ -42,12 +24,30 @@
             "deviceId": "1WMHH83HZ80492",
             "name": "com.oculus.os.vrusb",
             "processId": 28438,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
             "processId": 30162,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 5389,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.oculus.os.vrusb",
+            "processId": 5573,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 7812,
             "exited": false
         },
         {

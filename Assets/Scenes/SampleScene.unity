@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.4773941, g: 0.62081474, b: 0.6792453, a: 0}
+  m_AmbientSkyColor: {r: 0.11764706, g: 0.15686275, b: 0.27450982, a: 0}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -626,7 +626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167046674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.045, y: 2.015, z: 32.84851}
+  m_LocalPosition: {x: 18.66, y: 2.908, z: 4.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1769292098}
@@ -1606,11 +1606,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a24b3e8b17c88f408b2a30d55147d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mazeLightEnabled: 1
-  noLightColor: {r: 0.1268245, g: 0.17720978, b: 0.2830189, a: 0}
+  mazeLightEnabled: 0
+  noLightColor: {r: 0.11764706, g: 0.15686275, b: 0.27450982, a: 0}
   lightColor: {r: 0.4773941, g: 0.62081474, b: 0.6792453, a: 0}
   lightStepDoor: {fileID: 1325600687}
-  greenDoorUnlocked: 1
+  greenDoorUnlocked: 0
   greenBadgeCollider: {fileID: 1508322624}
   greenBadgeStepDoor: {fileID: 874240386}
 --- !u!4 &390311431
@@ -2471,13 +2471,29 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6691753536342800329, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: OwnershipTransfer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691753536342800329, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691753536342800329, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: ObservedComponents.Array.data[1]
+      value: 
+      objectReference: {fileID: 393940373}
+    - target: {fileID: 6691753536342800329, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: ObservedComponents.Array.data[2]
+      value: 
+      objectReference: {fileID: 874240385}
     - target: {fileID: 7569614319097280386, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
       propertyPath: sceneViewId
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7693059951828659885, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8997317395830920782, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
       propertyPath: m_RootOrder
@@ -6042,7 +6058,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120311841}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.04, y: 2.908, z: 26.161001}
+  m_LocalPosition: {x: 15.25, y: 2.908, z: 4.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1769292098}
