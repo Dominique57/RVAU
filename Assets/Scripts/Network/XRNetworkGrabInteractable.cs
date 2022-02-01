@@ -34,13 +34,11 @@ public class XRNetworkGrabInteractable : MonoBehaviour {
     }
 
     void OnExited(SelectExitEventArgs arg) {
-        Debug.LogWarning($"Set gravity mode to {useGravityBackup}");
         PhotonView.Get(this).RPC("setGravity", RpcTarget.All, useGravityBackup);
     }
 
     [PunRPC]
     void setGravity(bool useGravity, PhotonMessageInfo info) {
-        Debug.LogWarning($"changed gravity mode to {useGravity} !");
         _rigidbody.useGravity = useGravity;
     }
 }

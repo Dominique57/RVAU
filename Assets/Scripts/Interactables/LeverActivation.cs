@@ -2,29 +2,60 @@ using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem.LowLevel;
 
 public class LeverActivation : MonoBehaviour {
-    public ColliderListener enterTrigger;
+    public ColliderListener enableTrigger;
+    public ColliderListener disableTrigger;
     public Collider handleCollider;
-    
-    public GameManager gameManager;
 
+    private UnityEvent<Collider> enableEvent = new UnityEvent<Collider>();
+    private UnityEvent<Collider> disableEvent = new UnityEvent<Collider>();
+    
+    public UnityEvent<Collider> EnableEvent => enableEvent;
+    public UnityEvent<Collider> DisableEvent => disableEvent;
+
+    protected bool m_enabled = false;
+    protected bool m_disabled = false;
+
+    public bool Enabled => m_enabled;
+    public bool Disabled => m_disabled;
+    
     void Start() {
-        enterTrigger.TriggerEnterListener.AddListener(EnterTriggger);
-        if (gameManager is null) {
-            Debug.LogWarning("Lever missing gameManager, trying to find one");
-            gameManager = GameObject.Find("GameManager")?.GetComponent<GameManager>();
-        }
+        enableTrigger.TriggerEnterListener.AddListener(EnableLeverEnter);
+        enableTrigger.TriggerExitListener.AddListener(EnableLeverExit);
+        disableTrigger.TriggerEnterListener.AddListener(DisableLeverEnter);
+        disableTrigger.TriggerExitListener.AddListener(DisableLeverExit);
     }
 
-    void EnterTriggger(Collider other) {
-        if (handleCollider == other)
-            PhotonView.Get(this).RPC("OnExecute", RpcTarget.AllBuffered);
+    void EnableLeverEnter(Collider other) {
+        if (other != handleCollider)
+            return;
+        
+        m_enabled = true;
+        enableEvent.Invoke(other);
     }
     
-    [PunRPC]
-    void OnExecute(PhotonMessageInfo info) {
-        if (gameManager != null && !gameManager.mazeLightEnabled)
-            gameManager.enableMazeLight();
+    void EnableLeverExit(Collider other) {
+        if (other != handleCollider)
+            return;
+        
+        m_enabled = false;
+    }
+
+    void DisableLeverEnter(Collider other) {
+        if (other != handleCollider)
+            return;
+
+        m_disabled = true;
+        disableEvent.Invoke(other);
+    }
+    
+    void DisableLeverExit(Collider other) {
+        if (other != handleCollider)
+            return;
+        
+        m_disabled = false;
     }
 }
