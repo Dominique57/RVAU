@@ -9,7 +9,7 @@ using Photon.Pun;
 public class XRNetworkGrabInteractable : MonoBehaviour {
     
     private PhotonView _photonView;
-    // Start is called before the first frame update
+    
     void Start() {
         _photonView = GetComponent<PhotonView>();
         if (_photonView.OwnershipTransfer != OwnershipOption.Takeover) {
