@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour {
     public LeverActivation leverDoor2;
     public LeverActivation leverDoor3;
     public bool leverCodeCorrect = false;
-    public DoorOpeningWithLock leverStepDoor;
+    public List<DoorOpeningWithLock> leverStepDoors = new List<DoorOpeningWithLock>();
 
     protected struct LeverCode {
         public LeverActivation _lever;
@@ -132,6 +132,8 @@ public class GameManager : MonoBehaviour {
     }
 
     public void OnLeverCodeCorrect() {
-        leverStepDoor.locked = false;
+        foreach (var leverStepDoor in leverStepDoors) {
+            leverStepDoor.locked = false;
+        }
     }
 }
