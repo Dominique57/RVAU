@@ -9,8 +9,11 @@ public class GameManager : MonoBehaviour {
     public bool mazeLightEnabled = false;
     public Color noLightColor;
     public Color lightColor;
-
     public DoorOpeningWithLock lightStepDoor;
+
+    public bool greenDoorUnlocked = false;
+    public ColliderListener greenBadgeCollider;
+    public DoorOpeningWithLock greenBadgeStepDoor;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +22,10 @@ public class GameManager : MonoBehaviour {
             disableMazeLight();
         else
             enableMazeLight();
+
+        greenBadgeStepDoor.locked = !greenDoorUnlocked;
+        
+        greenBadgeCollider.TriggerEnterListener.AddListener(OnGreenTriggerEnter);
     }
 
     // Called only in editor mode when a variable is changed
@@ -53,5 +60,9 @@ public class GameManager : MonoBehaviour {
     public void toggleFlashLights() {
         toggleFlashLights(!mazeLightEnabled);
     }
-    
+
+    public void OnGreenTriggerEnter(Collider other) {
+        if (other.CompareTag("Badge"))
+            greenBadgeStepDoor.locked = false;
+    }
 }
