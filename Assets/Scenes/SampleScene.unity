@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.11764706, g: 0.15686275, b: 0.27450982, a: 0}
+  m_AmbientSkyColor: {r: 0.4773941, g: 0.62081474, b: 0.6792453, a: 0}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -1202,7 +1202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a24b3e8b17c88f408b2a30d55147d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mazeLightEnabled: 0
+  mazeLightEnabled: 1
   noLightColor: {r: 0.11764706, g: 0.15686275, b: 0.27450982, a: 0}
   lightColor: {r: 0.4773941, g: 0.62081474, b: 0.6792453, a: 0}
   lightStepDoor: {fileID: 1325600687}
@@ -1606,13 +1606,25 @@ PrefabInstance:
       propertyPath: locked
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1449253053200933550, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449253053200933550, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2350006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449253053200933550, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.973
+      objectReference: {fileID: 0}
     - target: {fileID: 1622630369440637167, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2768256240012692676, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3225170670561109318, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1681,6 +1693,18 @@ PrefabInstance:
     - target: {fileID: 4174096596867826146, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803643997829820004, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803643997829820004, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.235
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803643997829820004, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.973
       objectReference: {fileID: 0}
     - target: {fileID: 5457784883576846092, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
       propertyPath: m_SynchronizeLayers.Array.data[0].SynchronizeType
@@ -4106,7 +4130,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4632756444364120746, guid: 3d99a1363fcbeac45a51a401dbac6d06, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4632756444364120746, guid: 3d99a1363fcbeac45a51a401dbac6d06, type: 3}
       propertyPath: m_LocalPosition.x
