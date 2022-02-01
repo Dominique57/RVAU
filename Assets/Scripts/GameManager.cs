@@ -125,6 +125,7 @@ public class GameManager : MonoBehaviour {
     
     protected void OnLeverDoorToggle(Collider other) {
         leverCodeCorrect = CheckLevelCode();
+        Debug.Log($"Lever activated: correct code: {leverCodeCorrect}, repr: {LevelCodeToString()}");
         if (leverCodeCorrect)
             OnLeverCodeCorrect();
     }
