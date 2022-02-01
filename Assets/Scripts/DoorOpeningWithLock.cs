@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 public class DoorOpeningWithLock : MonoBehaviour {
@@ -21,12 +22,24 @@ public class DoorOpeningWithLock : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (isPlayer(other) && !locked)
-            animator.SetBool(CharacterNearby, true);
+        if (!isPlayer(other) || locked)
+            return;
+        
+        var photonView = PhotonView.Get(this);
+        if (photonView != null)
+            photonView.RequestOwnership();
+
+        animator.SetBool(CharacterNearby, true);
     }
 
     private void OnTriggerExit(Collider other) {
-        if (isPlayer(other))
-            animator.SetBool(CharacterNearby, false);
+        if (!isPlayer(other))
+            return;
+        
+        var photonView = PhotonView.Get(this);
+        if (photonView != null)
+            photonView.RequestOwnership();
+
+        animator.SetBool(CharacterNearby, false);
     }
 }

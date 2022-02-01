@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 public class DoorOpening : MonoBehaviour
@@ -27,14 +28,21 @@ public class DoorOpening : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
+        var photonView = PhotonView.Get(this);
+        if (photonView != null)
+            photonView.RequestOwnership();
+        
         if (!boxCollider.enabled && other.gameObject.tag.Equals("PC_Player")) // TODO: replace to VR_Player
-        {
             animator.SetBool(CharacterNearby, true);
-        }
+        
     }
 
     private void OnTriggerExit(Collider other)
     {
+        var photonView = PhotonView.Get(this);
+        if (photonView != null)
+            photonView.RequestOwnership();
+        
         if (other.gameObject.tag.Equals("PC_Player")) // TODO: replace to VR_Player
         {
             animator.SetBool(CharacterNearby, false);

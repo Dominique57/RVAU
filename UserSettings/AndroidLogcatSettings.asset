@@ -3,63 +3,27 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH83HZ80492",
         "name": "com.DominiqueSoft.ProjetRVAU",
-        "processId": 30162,
+        "processId": 15753,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 24456,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 25559,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 26064,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 26447,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 26875,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.oculus.os.vrusb",
-            "processId": 28438,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH83HZ80492",
-            "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 30162,
-            "exited": false
-        },
-        {
-            "deviceId": "1PASH9A9JQ0286",
             "name": "com.oculus.shellenv",
-            "processId": 2851,
+            "processId": 21030,
             "exited": false
         },
         {
-            "deviceId": "1PASH9A9JQ0286",
+            "deviceId": "1WMHH83HZ80492",
             "name": "com.DominiqueSoft.ProjetRVAU",
-            "processId": 6723,
+            "processId": 15416,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83HZ80492",
+            "name": "com.DominiqueSoft.ProjetRVAU",
+            "processId": 15753,
             "exited": false
         }
     ],
@@ -113,7 +77,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "photon",
+    "m_Filter": "",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }
