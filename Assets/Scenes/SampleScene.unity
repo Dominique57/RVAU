@@ -1746,12 +1746,38 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9138723066455198018, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
   m_PrefabInstance: {fileID: 616738412}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 616738415}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5cb6312e14c0ea4b9d0461ee5a9a38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &616738415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1038993290235039184, guid: 8aab66ef69201984185058dc62204fd7, type: 3}
+  m_PrefabInstance: {fileID: 616738412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &616738416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616738415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 1
+    Name: character_nearby
+  m_SynchronizeLayers:
+  - SynchronizeType: 1
+    LayerIndex: 0
 --- !u!1001 &674175514
 PrefabInstance:
   m_ObjectHideFlags: 0
